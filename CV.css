@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e7f5ff;
+}
+nav {
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #10cab7;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  border-radius: 2px;
+}
+.box {
+  list-style: none;
+  display: inline-block;
+}
+.my-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+a {
+  color: black;
+  text-decoration: none;
+  padding: 2px;
+  margin-right: 10px;
+}
+.navbar p {
+  font-size: large;
+  margin-right: auto;
+  padding: 10px;
+}
+.navbar p span {
+  color: #fff;
+}
+
+.navbar li a:hover {
+  border-bottom: 1px solid;
+  padding: 5px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+.section-welcome {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.section-me {
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding: 100px;
+}
+.section-me .about-me h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.section-me .about-me {
+  width: 50%;
+}
+.div-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-skills {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.section-work {
+  background-color: white;
+  width: 100%;
+  height: min-content;
+}
+.section-welcome .div-welcome p {
+  font-size: 100px;
+  text-shadow: 3px 3px gray;
+}
+.section-welcome .div-welcome p span {
+  display: block;
+  color: #10cab7;
+  text-align: center;
+  font-family: "Rubik Dirt", "cursive";
+}
+.div-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-work .div-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid;
+  padding: 20px;
+}
+
+.section-work .div-work_entities {
+  height: fit-content;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.section-skills .div-skill {
+  height: 80%;
+}
+.top {
+  height: 20%;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+.top h1 {
+  display: inline-block;
+  padding: 5px;
+  color: #10cab7;
+}
+img {
+  width: 100%;
+  height: 200px;
+}
+.section-work .div-work_entities:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid black;
+  border-radius: 5px;
+}
+.section-work .div-work_entities p {
+  line-height: 28px;
+}
+.section-work a {
+  display: none;
+}
+.section-work .div-work_entities .links {
+  margin-top: 10px;
+}
+.section-work .div-work_entities:hover a {
+  display: inline;
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 4px 50px;
+  opacity: 0.4;
+}
+.section-work .div-work_entities .links a:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f6f6f6;
+  transition: all 0.4s ease;
+}
+.section-skills .div-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  place-items: center;
+  padding-bottom: 20px;
+}
+.section-skills .div-skill .pictures {
+  width: 300px;
+  padding: 20px;
+  transition: transform 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.section-skills .div-skill .pictures:hover {
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.section-skills .div-skill .pictures .percantage {
+  width: 100%;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 3px;
+  transition: 2s;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.content .left {
+  margin-right: auto;
+}
+.percantage {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.CSS,
+.git,
+.js,
+.html,
+.php,
+.sql {
+  position: absolute;
+  width: 0px;
+  height: 18px;
+  background: #10cab7;
+  transition: width 2s;
+}
+.pictures:hover .CSS {
+  width: 70%;
+}
+.pictures:hover .html {
+  width: 70%;
+}
+.pictures:hover .js {
+  width: 60%;
+}
+.pictures:hover .sql {
+  width: 90%;
+}
+.pictures:hover .php {
+  width: 90%;
+}
+.pictures:hover .git {
+  width: 50%;
+}
+.footer {
+  width: 100%;
+  height: min-content;
+  background-color: #10cab7;
+  text-align: center;
+  padding-top: 15px;
+}
+h1 {
+  font-size: 40px;
+}
+pre {
+  font-size: 20px;
+}
+.footer .personal_links {
+  font-size: 40px;
+}
+.footer .buttons {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .buttons .buttons_border {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+.footer .buttons .buttons_border:hover {
+  color: #e7f5ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+h5 {
+  height: min-content;
+  width: 100%;
+  padding: 30px;
+  background-color: #228077;
+  text-align: center;
+  font-size: 30px;
+}
+h5 span {
+  color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  background: rgb(30, 30, 40);
+}
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}

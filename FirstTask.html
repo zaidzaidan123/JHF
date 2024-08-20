@@ -2,109 +2,275 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/HTML.png" />
+    <link rel="stylesheet" href="CV.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e9d5b19a5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <div>
-      <img
-        src="./349805235_3587118858187270_9184127893225386262_n.jpg"
-        alt="Profile Pic"
-        width="200px"
-      />
-      <a href="https://www.linkedin.com/in/zaid--zaidan/" target="_blank">
-        LinkedIn</a
-      >
-      <a href="https://github.com/zaidzaidan123" target="_blank"> Github</a>
-    </div>
-    <hr />
-    <div>
-      <div>
-        <h4>Previous Experience</h4>
-        <p>Frontend developer - Contract (TAP)</p>
-        <ul>
-          <li>
-            Developed a new Platform for TAP that provides users with a
-            mechanism to apply for TAP programs directly through the platform
-            instead of the old email-based process
-          </li>
-          <li>
-            Built 50%+ of the new platform frontend using React, Next.js,
-            TypeScript, and Tailwind CSS.
-          </li>
-          <li>
-            Refactored the original website pages, creating new presentational
-            components that were used across the whole website.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <p>Frontend developer - Internship (Gaza Sky Geeks)</p>
-        <ul>
-          <li>
-            Learned the fundamentals of HTML, CSS, and JavaScript for building
-            web interfaces.
-          </li>
-          <li>
-            Gained hands-on experience with React for creating dynamic
-            single-page applications.
-          </li>
-          <li>
-            Applied responsive design principles using MUI to ensure
-            cross-device compatibility.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <hr />
-      <h4>Skills</h4>
+    <nav class="navbar" id="nav">
+      <p class="logo"><span>Z</span>aid <span>Z</span>aidan</p>
       <ul>
-        <li>
-          <strong>Programming technologies: </strong> CSS, JavaScript,
-          TypeScript, React, Next.js, Vue.js, TailwindCSS, Webflow, MUI.
-        </li>
-        <li>
-          <strong>Others: </strong> Github, Git, Playwright, Testing,
-          Problem-solving, Figma, Notion, Jira.
-        </li>
-        <li><strong>Languages: </strong> English: Fluent, Arabic: Native.</li>
+        <li class="box"><a href="#welcome">Home</a></li>
+        <li class="box"><a href="#me">About Me</a></li>
+        <li class="box"><a href="#work">Work</a></li>
+        <li class="box"><a href="#skill">Skills</a></li>
+        <li class="box"><a href="#footer">Contact</a></li>
       </ul>
-    </div>
-    <hr />
+    </nav>
+    <main>
+      <section class="section-welcome" id="welcome">
+        <div class="div-welcome">
+          <img
+            src="349805235_3587118858187270_9184127893225386262_n.jpg"
+            alt="myPicture"
+            class="my-image"
+          />
+
+          <p><span>Welcome</span> to my Portfolio website</p>
+        </div>
+      </section>
+      <section class="section-me" id="me">
+        <div class="div-me">
+          <div class="about-me">
+            <h1>About me</h1>
+            <p>
+              Passionate front-end developer skilled in HTML, CSS, and
+              JavaScript, with a focus on creating exceptional user experiences.
+              Proficient in modern frameworks like React.js, translating designs
+              into dynamic websites. Strong problem-solving abilities and
+              effective communication skills. Ready to contribute to the success
+              of any front-end development team.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-work" id="work">
+        <div class="top">
+          <h1>Experience</h1>
+        </div>
+        <div class="div-work">
+          <div class="div-work_entities">
+            <h3>Frontend Developer (Contract)</h3>
+            <p>TAP</p>
+            <ul>
+              <li>
+                Developed a new Platform for TAP that provides users with a
+                mechanism to apply for TAP programs directly through the
+                platform instead of the old email-based process
+              </li>
+              <li>
+                Built 50%+ of the new platform frontend using React, Next.js,
+                TypeScript, and Tailwind CSS.
+              </li>
+              <li>
+                Refactored the original website pages, creating new
+                presentational components that were used across the whole
+                website.
+              </li>
+            </ul>
+          </div>
+          <div class="div-work_entities">
+            <h3>Frontend Developer (Internship)</h3>
+            <p>TAP</p>
+            <ul>
+              <li>
+                Diving deeply into front-end principles like Layout techniques,
+                CSS best practices and centralization, CSS reusability, and
+                levels of abstraction.
+              </li>
+              <li>
+                Working on projects with weekly feedback to develop a sense of
+                software engineering best practices, like Modularity,
+                Maintainability, Scalability, Performance, and how all of this
+                can be implemented with JS.
+              </li>
+              <li>
+                Working on developing a strong professional attitude through
+                weekly sessions of power skills group discussions like growth
+                mindset, effective communication, time management, and
+                ownership.
+              </li>
+            </ul>
+          </div>
+          <div class="div-work_entities">
+            <h3>Frontend Developer (Internship)</h3>
+            <p>Gaza Sky Geeks</p>
+            <ul>
+              <li>
+                Learned the fundamentals of HTML, CSS, and JavaScript for
+                building web interfaces.
+              </li>
+              <li>
+                Gained hands-on experience with React for creating dynamic
+                single-page applications.
+              </li>
+              <li>
+                Applied responsive design principles using MUI to ensure
+                cross-device compatibility.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-skills" id="skill">
+        <div class="top">
+          <h1>Skills</h1>
+        </div>
+        <div class="div-skill">
+          <div class="pictures">
+            <div class="content">
+              <p class="left">HTML</p>
+              <p>70%</p>
+            </div>
+            <div class="percantage">
+              <div class="html"></div>
+            </div>
+          </div>
+          <div class="pictures">
+            <div class="content">
+              <p class="left">CSS</p>
+              <p>70%</p>
+            </div>
+            <div class="percantage">
+              <div class="CSS"></div>
+            </div>
+          </div>
+          <div class="pictures">
+            <div class="content">
+              <p class="left">Java script</p>
+              <p>60%</p>
+            </div>
+            <div class="percantage">
+              <div class="js"></div>
+            </div>
+          </div>
+
+          <div class="pictures">
+            <div class="content">
+              <p class="left">PHP</p>
+              <p>90%</p>
+            </div>
+            <div class="percantage">
+              <div class="php"></div>
+            </div>
+          </div>
+          <div class="pictures">
+            <div class="content">
+              <p class="left">MySQL</p>
+              <p>90%</p>
+            </div>
+            <div class="percantage">
+              <div class="sql"></div>
+            </div>
+          </div>
+          <div class="pictures">
+            <div class="content">
+              <p class="left">Git</p>
+              <p>50%</p>
+            </div>
+            <div class="percantage">
+              <div class="git"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer" id="footer">
+        <h1>Contact me</h1>
+        <div>
+          <!-- <form action="#" method="post">
+            <div class="row">
+              <div class="column">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="column">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="column">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                  <option value="">Select Country</option>
+                  <option value="ps">Palestine</option>
+                  <option value="sp">Spain</option>
+                  <option value="lb">Lebanon</option>
+                  <option value="sw">Switzerland</option>
+                  <option value="ho">Holland</option>
+                </select>
+              </div>
+              </div>
+            </div>
+
+            <label for="message">Write a note or message for me:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="buttons">
+              <input type="submit" value="Submit" />
+              <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form> -->
+
+          <form>
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <input name="phone" type="tel" class="feedback-input" placeholder="Phone Number" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form> 
+        </div>
+        
+        <div class="personal_links">
+          <a href="https://www.facebook.com/zaid.zaidan.10" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/zaid_zaidan10" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/zaid.zaidan10/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/zaid-zaidan-56a191234/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/zaidzaidan123" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto: zaidzaidan79@gmail.com" target="_blank"
+            ><i class="fa-duotone fa-mailbox"></i
+          ></a>
+        </div>
+    </footer>
     <div>
-      <h4>Hobbies</h4>
-      <ol>
-        <li>BasketBall</li>
-        <li>Table Tennis</li>
-        <li>Video Games</li>
-        <li>Watching Series</li>
-      </ol>
-    </div>
-    <hr />
-    <div>
-      <h4>Contact Me:</h4>
-      <div><label for="">Available Hours : 8:00 Am to 4:00 Pm</label></div>
-
-      <form>
-        <div>
-          <label>First Name: </label>
-          <input type="text" />
-        </div>
-
-        <div>
-          <label>Last Name: </label>
-          <input type="text" />
-        </div>
-        <div><label>Email: </label> <input type="email" /></div>
-
-        <div><label>Phone Name: </label> <input type="tel" /></div>
-        <div>
-          <label>Desorption of what you need: </label> <textarea></textarea>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
+      <h5>Design By <span>Zaid Zaidan</span></h5>
     </div>
   </body>
 </html>
