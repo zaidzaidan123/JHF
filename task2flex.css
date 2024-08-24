@@ -40,7 +40,6 @@ body{
   flex-direction: column;
   padding: 20px;
   width: 60%;
-  height: 250px;
   background-color: #34c9ff;
   gap: 10px;
 }
@@ -48,7 +47,6 @@ body{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 250px;
   width: 40%;
   background-color: #d9d9d9;
   padding: 20px;
