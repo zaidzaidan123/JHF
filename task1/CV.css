@@ -7,6 +7,13 @@
 body {
   background-color: #e7f5ff;
 }
+
+.dark-mode {
+  color: white;
+}
+.light-mode {
+  color: black;
+}
 nav {
   height: 50px;
   position: relative;

@@ -19,7 +19,7 @@
     ></script>
   </head>
 
-  <body>
+  <body class="light-mode" id="body">
     <nav class="navbar" id="nav">
       <p class="logo"><span>Z</span>aid <span>Z</span>aidan</p>
       <ul>
@@ -28,6 +28,7 @@
         <li class="box"><a href="#work">Work</a></li>
         <li class="box"><a href="#skill">Skills</a></li>
         <li class="box"><a href="#footer">Contact</a></li>
+        <li class="box" id="dark-light">Dark</li>
       </ul>
     </nav>
     <main>
@@ -43,10 +44,10 @@
         </div>
       </section>
       <section class="section-me" id="me">
-        <div class="div-me">
-          <div class="about-me">
+        <div class="div-me" id="about-me-container">
+          <div class="about-me" >
             <h1>About me</h1>
-            <p>
+            <p id="about-me-text">
               Passionate front-end developer skilled in HTML, CSS, and
               JavaScript, with a focus on creating exceptional user experiences.
               Proficient in modern frameworks like React.js, translating designs
@@ -57,11 +58,22 @@
           </div>
         </div>
       </section>
-      <section class="section-work" id="work">
-        <div class="top">
-          <h1>Experience</h1>
+
+      <section class="section-me" id="quote1" >
+        <div class="div-me">
+          <div class="about-me" >
+            <h1 id="randomQuoteSelector">Click on me to see Random Quotes</h1>
+            <p id="randomQuote">
+              
+            </p>
+          </div>
         </div>
-        <div class="div-work">
+      </section>
+      <section class="section-work" id="work">
+        <div class="top" id="top">
+          <h1 id="expand-experience">click to expand Experience</h1>
+        </div>
+        <div class="div-work" id="experience">
           <div class="div-work_entities">
             <h3>Frontend Developer (Contract)</h3>
             <p>TAP</p>
@@ -194,11 +206,11 @@
         <div>
 
           <form>
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <input name="phone" type="tel" class="feedback-input" placeholder="Phone Number" />
+            <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+            <input name="email" id="email" type="text" class="feedback-input" placeholder="Email" required />
+            <input name="phone" type="tel" class="feedback-input" placeholder="Phone Number" required/>
             <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-            <input type="submit" value="SUBMIT"/>
+            <input type="submit" value="SUBMIT" id="formbutton"/>
           </form> 
         </div>
         
@@ -228,5 +240,8 @@
     <div>
       <h5>Design By <span>Zaid Zaidan</span></h5>
     </div>
+
+
+    <script src="index.js"></script>
   </body>
 </html>
